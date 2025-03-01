@@ -12,7 +12,7 @@ from docx import Document
 # 🔹 Вставь свой токен бота
 TOKEN = "7759754415:AAE2UWgC_B9lx-DV4TG-57JsyZS4qES9LjY"
 
-bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+bot = Bot(token=TOKEN, parse_mode=ParseMode.HTML)
 dp = Dispatcher()
 router = Router()
 
