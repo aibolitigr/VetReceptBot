@@ -1,0 +1,180 @@
+[
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Router",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "ReplyKeyboardMarkup",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "FSInputFile",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "ParseMode",
+        "importPath": "aiogram.enums",
+        "description": "aiogram.enums",
+        "isExtraImport": true,
+        "detail": "aiogram.enums",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultBotProperties",
+        "importPath": "aiogram.client.default",
+        "description": "aiogram.client.default",
+        "isExtraImport": true,
+        "detail": "aiogram.client.default",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "aiogram.filters",
+        "description": "aiogram.filters",
+        "isExtraImport": true,
+        "detail": "aiogram.filters",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "docx",
+        "description": "docx",
+        "isExtraImport": true,
+        "detail": "docx",
+        "documentation": {}
+    },
+    {
+        "label": "TOKEN",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "TOKEN = \"7759754415:AAE2UWgC_B9lx-DV4TG-57JsyZS4qES9LjY\"\nbot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))\ndp = Dispatcher()\nrouter = Router()\n# 🔹 Клавиатура с кнопкой\nmenu = ReplyKeyboardMarkup(\n    keyboard=[[KeyboardButton(text=\"📝 Новый рецепт\")]],\n    resize_keyboard=True\n)\nuser_data = {}",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))\ndp = Dispatcher()\nrouter = Router()\n# 🔹 Клавиатура с кнопкой\nmenu = ReplyKeyboardMarkup(\n    keyboard=[[KeyboardButton(text=\"📝 Новый рецепт\")]],\n    resize_keyboard=True\n)\nuser_data = {}\n@router.message(Command(\"start\"))",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "dp = Dispatcher()\nrouter = Router()\n# 🔹 Клавиатура с кнопкой\nmenu = ReplyKeyboardMarkup(\n    keyboard=[[KeyboardButton(text=\"📝 Новый рецепт\")]],\n    resize_keyboard=True\n)\nuser_data = {}\n@router.message(Command(\"start\"))\nasync def send_welcome(message: types.Message):",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "router = Router()\n# 🔹 Клавиатура с кнопкой\nmenu = ReplyKeyboardMarkup(\n    keyboard=[[KeyboardButton(text=\"📝 Новый рецепт\")]],\n    resize_keyboard=True\n)\nuser_data = {}\n@router.message(Command(\"start\"))\nasync def send_welcome(message: types.Message):\n    await message.answer(\"Привет! Я бот для заполнения рецептов.\\n\\nНажми '📝 Новый рецепт' или введи /new_recipe\", reply_markup=menu)",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "menu = ReplyKeyboardMarkup(\n    keyboard=[[KeyboardButton(text=\"📝 Новый рецепт\")]],\n    resize_keyboard=True\n)\nuser_data = {}\n@router.message(Command(\"start\"))\nasync def send_welcome(message: types.Message):\n    await message.answer(\"Привет! Я бот для заполнения рецептов.\\n\\nНажми '📝 Новый рецепт' или введи /new_recipe\", reply_markup=menu)\n@router.message(lambda message: message.text == \"📝 Новый рецепт\" or message.text == \"/new_recipe\")\nasync def ask_instance_number(message: types.Message):",
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "user_data",
+        "kind": 5,
+        "importPath": "bot",
+        "description": "bot",
+        "peekOfCode": "user_data = {}\n@router.message(Command(\"start\"))\nasync def send_welcome(message: types.Message):\n    await message.answer(\"Привет! Я бот для заполнения рецептов.\\n\\nНажми '📝 Новый рецепт' или введи /new_recipe\", reply_markup=menu)\n@router.message(lambda message: message.text == \"📝 Новый рецепт\" or message.text == \"/new_recipe\")\nasync def ask_instance_number(message: types.Message):\n    user_data[message.chat.id] = {}\n    await message.answer(\"Введите номер экземпляра рецепта:\")\n@router.message(lambda message: message.chat.id in user_data and \"instance_number\" not in user_data[message.chat.id])\nasync def ask_recipe_number(message: types.Message):",
+        "detail": "bot",
+        "documentation": {}
+    }
+]
